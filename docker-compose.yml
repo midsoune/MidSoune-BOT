@@ -2,7 +2,7 @@ version: "3.9"
 services:
   worker:
     build: .
-    volumes:
+    volumes: 
       - .:/code
       - logvolume01:/var/log
     links:
