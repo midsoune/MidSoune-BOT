@@ -14,7 +14,7 @@ global.baileys = '@whiskeysockets/baileys'
   global.prems = ['YourNumber', '']
   global.mods = ['YourNumber','YourNumber']
   global.lolkeysapi = 'gatadios'
-  global.installationId = ['a1i0G--iafgpxFY-JF2V-SASY_-JcirG7j6TRI8UEQ0d-WNrTbNeNRYSg7-ZGF41']
+  global.installationId = ['TRUECALLER_ID']
   global.xyro = 'p3m8UTEawQ'
  global.herapi = 'fee7b0be8faf' // لا تحذف هذا الرمز
 
