@@ -17,7 +17,7 @@
 1. Enter your WhatsApp number.
 2. Enter the pairing code on your WhatsApp account.
 3. You will receive a message with your SESSION_ID.
-4. Put the SESSION_ID in Config.js or in Heroku environment variables.
+4. Put the SESSION_ID in <b>Config.js</b> or in <b>Heroku Config Vars</b>.
 
 
 ## Debloy on HEROKU
