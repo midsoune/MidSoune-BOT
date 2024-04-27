@@ -6,4 +6,4 @@ database.json
 .env
 session
 tmp
-session.json
+session.json 
