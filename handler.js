@@ -5,7 +5,7 @@ import path, {join} from "path"
 import {unwatchFile,watchFile,readFileSync} from "fs"
 import chalk from "chalk"
 import fetch from "node-fetch"
-/**
+/** 
  * @type {import("@whiskeysockets/baileys")}
  */
 const isNumber = x => typeof x === "number" && !isNaN(x)
