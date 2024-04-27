@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 process.env.MODE = 'public'
-process.env.antidelete = 'false'
+process.env.antidelete = 'false' 
 process.env.DATABASE_URL = '';
 process.env.PREFIX = '.' 
 process.env.SESSION_ID = ''
