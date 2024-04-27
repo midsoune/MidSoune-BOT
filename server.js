@@ -11,7 +11,7 @@ function connect(conn, PORT) {
     conn.ev.on('connection.update', function appQR({ qr }) {
         if (qr) _qr = qr
     })
-
+ 
     app.use(async (req, res) => {
         res.setHeader('content-type', 'image/png')
         res.end(await toBuffer(_qr))
