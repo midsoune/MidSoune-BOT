@@ -3,20 +3,20 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 process.env.MODE = 'public'
-process.env.antidelete = 'true'
-process.env.DATABASE_URL = 'mongodb+srv://midsoune10:midsoune7@cluster0.efae1fu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+process.env.antidelete = 'false'
+process.env.DATABASE_URL = '';
 process.env.PREFIX = '.' 
-process.env.SESSION_ID = 'Midsoune@SeaboardLiquids'
+process.env.SESSION_ID = ''
 
-global.owner = [['212621124079', '👑 𝙈𝙞𝙙𝙨𝙤𝙪𝙣𝙚 👑', true]] 
+global.owner = [['YourNumber', '👑 𝙈𝙞𝙙𝙨𝙤𝙪𝙣𝙚 👑', true]] 
 global.baileys = '@whiskeysockets/baileys'
- global.botNumber = '212621124079' 
-  global.prems = ['212621124079', '']
-  global.mods = ['212697118528','212697118528']
+ global.botNumber = 'YourNumber' 
+  global.prems = ['YourNumber', '']
+  global.mods = ['YourNumber','YourNumber']
   global.lolkeysapi = 'gatadios'
   global.installationId = ['a1i0G--iafgpxFY-JF2V-SASY_-JcirG7j6TRI8UEQ0d-WNrTbNeNRYSg7-ZGF41']
   global.xyro = 'p3m8UTEawQ'
- global.herapi = 'fee7b0be8faf'
+ global.herapi = 'fee7b0be8faf' // لا تحذف هذا الرمز
 
 
  global.APIs = { 
