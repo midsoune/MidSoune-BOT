@@ -3,7 +3,7 @@
   "description": " Whatsapp bot.",
   "keywords": [
     "whatsapp bot"
-  ],
+  ], 
   "repository": "https://github.com/midsoune/MidSoune-BOT",
   "stack": "container",
   "env": {
