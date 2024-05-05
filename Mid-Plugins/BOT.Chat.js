@@ -1,7 +1,6 @@
 // ميزة الرد على الرسائل برد معين
 let handler = m => m;
 handler.all = async function (m) {
-console.log(m.chat)
       // مثال للرد بتعبير
       if (/^(cc|سس|ss)$/i.test(m.text)) { 
      conn.react(`🤖`); 
