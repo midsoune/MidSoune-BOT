@@ -1,30 +1,23 @@
 // ميزة إرسال رسالة موحدة لجميع أعضاء المجموعة في الخاص
-let handler = async (m, {conn, groupMetadata,  usedPrefix, text,command}) => {
-if (!text && !m.quoted) return m.reply("أدخل نص الرسالة?")
+let handler = async (m, {conn, groupMetadata, usedPrefix, text, command}) => {
+if (!text && !m.quoted) return m.reply("أدخل نص الرسالة ?")
     let get = await groupMetadata.participants.filter(v => v.id.endsWith('.net')).map(v => v.id)
     let count = get.length;
     let sentCount = 0;
 
-
- let { key } = await conn.sendMessage(m.chat, {text: '_Loading_'})
-
     for (let i = 0; i < get.length; i++) {
         setTimeout(function() {
             if (text) {
-                conn.sendMessage(get[i], {
-                    text: text
-                });
+                conn.sendMessage(get[i], {text: text});
             } else if (m.quoted) {
-                conn.copyNForward(get[i], m.getQuotedObj(), false);
+         conn.copyNForward(get[i], m.getQuotedObj(), false);
             } else if (text && m.quoted) {
-                conn.sendMessage(get[i], {
-                    text: text + "\n" + m.quoted.text
-                });
+         conn.sendMessage(get[i], { text: text + "\n" + m.quoted.text });
             }
             count--;
             sentCount++;
             if (count === 0) {
-             m.reply(`*${sentCount}*`);
+           m.react(done)
             }
         }, i * 1000); // تأخير كل رسالة لمدة 1 ثانية
     }
