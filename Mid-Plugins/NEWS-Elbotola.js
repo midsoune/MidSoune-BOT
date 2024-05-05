@@ -5,7 +5,7 @@ import moment from 'moment';
 
 const midsoune = async (m, { conn }) => {
   conn.botolad = conn.botolad ? conn.botolad : {};
-
+ 
   const res = await allelbotola();
   const instructions = "📢 *رد على الرسالة برقم الخبر لعرضه كاملا*";
 
