@@ -1,6 +1,6 @@
 // ميزة الرد على الرسائل برد معين
-let handler = m => m;
-handler.all = async function (m) {
+let midsoune = m => m;
+midsoune.all = async function (m) {
       // مثال للرد بتعبير
       if (/^(cc|سس|ss)$/i.test(m.text)) { 
      conn.react(`🤖`); 
@@ -12,4 +12,4 @@ handler.all = async function (m) {
       return !0;
   };
 
-export default handler
+export default midsoune
