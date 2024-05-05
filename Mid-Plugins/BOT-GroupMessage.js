@@ -1,5 +1,5 @@
 // ميزة إرسال رسالة موحدة لجميع أعضاء المجموعة في الخاص
-let handler = async (m, {conn, groupMetadata, text}) => {
+let midsoune = async (m, {conn, groupMetadata, text}) => {
 if (!text && !m.quoted) return m.reply("أدخل نص الرسالة ?")
     let get = await groupMetadata.participants.filter(v => v.id.endsWith('.net')).map(v => v.id)
     let count = get.length;
@@ -22,6 +22,6 @@ if (!text && !m.quoted) return m.reply("أدخل نص الرسالة ?")
         }, i * 1000); // تأخير كل رسالة لمدة 1 ثانية
     }
 }
-handler.command = ["send", "sift"]
-handler.group = true
-export default handler
+midsoune.command = ["send", "sift"]
+midsoune.group = true
+export default midsoune
