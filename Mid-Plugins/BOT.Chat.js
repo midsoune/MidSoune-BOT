@@ -9,7 +9,6 @@ handler.all = async function (m) {
       if (/^(سلام)$/i.test(m.text)) { 
      conn.reply(m.chat, 'وعليكم السلام ورحمة الله وبركاته', null); 
           } 
-
       return !0;
   };
 
