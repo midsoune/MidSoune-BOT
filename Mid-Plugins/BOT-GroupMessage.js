@@ -1,5 +1,5 @@
 // ميزة إرسال رسالة موحدة لجميع أعضاء المجموعة في الخاص
-let handler = async (m, {conn, groupMetadata, usedPrefix, text, command}) => {
+let handler = async (m, {conn, groupMetadata, text}) => {
 if (!text && !m.quoted) return m.reply("أدخل نص الرسالة ?")
     let get = await groupMetadata.participants.filter(v => v.id.endsWith('.net')).map(v => v.id)
     let count = get.length;
