@@ -6,7 +6,7 @@ const handler = async (m, {args}) => {
   let text = args.slice(1).join(' ');
   const defaultLang = 'ar';
   if ((args[0] || '').length !== 2) {
-    lang = defaultLang;
+    lang = defaultLang; 
     text = args.join(' ');
   }
   if (!text && m.quoted && m.quoted.text) text = m.quoted.text;
