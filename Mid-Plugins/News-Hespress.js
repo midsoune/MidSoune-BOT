@@ -1,3 +1,4 @@
+// ميزة عرض أخر أخبار موقع هيسبريس
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 
