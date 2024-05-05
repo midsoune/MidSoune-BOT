@@ -1,5 +1,5 @@
 // ميزة للحصول على بيانات Database لمستخدمي البوت
-
+ 
 import fs from 'fs';
 let midsoune = async (m, {command}) => {
 let usersData = JSON.stringify(global.db.data.users, null, 2);
